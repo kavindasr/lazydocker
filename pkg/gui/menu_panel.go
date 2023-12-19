@@ -131,3 +131,12 @@ func (gui *Gui) handleMenuClose() error {
 
 	return gui.returnFocus()
 }
+
+func (gui *Gui) handleClearMain() error {
+	if gui.popupPanelFocused() {
+		return nil
+	}
+
+	gui.Views.Main.Clear()
+	return nil
+}

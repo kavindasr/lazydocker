@@ -121,6 +121,7 @@ type TranslationSet struct {
 	NothingToDisplay          string
 	NoContainerForService     string
 	CannotDisplayEnvVariables string
+	ClearMain                 string
 
 	No  string
 	Yes string
@@ -256,6 +257,7 @@ func englishSet() TranslationSet {
 		StopContainer:               "Are you sure you want to stop this container?",
 		PressEnterToReturn:          "Press enter to return to lazydocker (this prompt can be disabled in your config by setting `gui.returnImmediately: true`)",
 		DetachFromContainerShortCut: "By default, to detach from the container press ctrl-p then ctrl-q",
+		ClearMain:                   "clear main panel",
 
 		No:  "no",
 		Yes: "yes",
